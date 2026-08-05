@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>New Features #1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">MuuD Space</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Dev Log: Feature Update #1</h1>
+							<h2>Resource System</h2>
+							<span class=" video-preview">
+								<video
+									muted
+									loop
+									playsinline
+									preload="metadata"
+									tabindex="0"
+									aria-label="Dev log animation preview"
+								>
+									<source src="clips/log_dog_of_war/feature_01/energy_01.webm" type="video/webm" />
+									<!-- <source src="videos/devlog-animation.mp4" type="video/mp4" /> -->
+									Your browser does not support HTML video.
+								</video>
+							</span>
+							<br></br>
+							<p>From our last playtest, people were wondering if there would be any cost associated with each ability. And here it is! Now there is a limit on how often you can cast your abilities, so you gotta think about how to use them wisely.
+							</p>
+							<hr />
+							<h2>Localization support: Simplified Chinese</h2>
+														<span class=" video-preview">
+									<video
+										muted
+										loop
+										playsinline
+										preload="metadata"
+										tabindex="0"
+										aria-label="Dev log animation preview"
+									>
+										<source src="clips/log_dog_of_war/feature_01/localization.webm" type="video/webm" />
+										<!-- <source src="videos/devlog-animation.mp4" type="video/mp4" /> -->
+										Your browser does not support HTML video.
+									</video>
+								</span>
+								<br />
+								<p> Added subtitle and localization options for the English narraition.
+								</p>
+							<br></br>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.querySelectorAll(".video-preview video").forEach((video) => {
+					video.addEventListener("mouseenter", async () => {
+						try {
+							await video.play();
+						} catch (error) {
+							console.warn("The preview video could not play:", error);
+						}
+					});
+
+					video.addEventListener("mouseleave", () => {
+						video.pause();
+						video.currentTime = 0;
+					});
+
+					video.addEventListener("focus", () => {
+						video.play().catch(() => {});
+					});
+
+					video.addEventListener("blur", () => {
+						video.pause();
+						video.currentTime = 0;
+					});
+				});
+			</script>
+	</body>
+</html>
