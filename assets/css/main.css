@@ -176,10 +176,10 @@ h1.major {
   padding-bottom: 0.35em;
 }
 h1.major:after {
-  background-image: -moz-linear-gradient(to right, #0b0b0a, #DD700B);
-  background-image: -webkit-linear-gradient(to right, #0b0b0a, #DD700B);
-  background-image: -ms-linear-gradient(to right, #0b0b0a, #DD700B);
-  background-image: linear-gradient(to right, #0b0b0a, #DD700B);
+  background-image: -moz-linear-gradient(to right, #0b0b0a, #E30079);
+  background-image: -webkit-linear-gradient(to right, #0b0b0a, #E30079);
+  background-image: -ms-linear-gradient(to right, #0b0b0a, #E30079);
+  background-image: linear-gradient(to right, #0b0b0a, #E30079);
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;
@@ -1979,7 +1979,7 @@ input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
   background: #ffffff;
   border-color: #ffffff;
-  color: #DD700B;
+  color: #E30079;
   content: "\f00c";
 }
 input[type=checkbox]:focus + label:before,
@@ -2075,10 +2075,10 @@ input[type=radio] + label:before {
   color: black;
 }
 .wrapper.style3 .icon.major:before {
-  color: #DD700B;
+  color: #E30079;
 }
 .wrapper.style3-alt .icon.major:before {
-  color: rgb(67.6149425287%, 34.2663962137%, 3.3654496281%);
+  color: rgb(69.0196078431%, 0%, 36.7901874406%);
 }
 
 /* Image */
@@ -2646,7 +2646,7 @@ table.alt tfoot {
   background-color: #0b0b0a;
 }
 .wrapper.style3-alt {
-  background-color: rgb(67.6149425287%, 34.2663962137%, 3.3654496281%);
+  background-color: rgb(69.0196078431%, 0%, 36.7901874406%);
 }
 .wrapper.fullscreen {
   display: -moz-flex;
@@ -3067,10 +3067,10 @@ body.is-ie #sidebar > .inner {
   background: rgb(20.0280112045%, 20.0280112045%, 18.2072829132%);
 }
 #sidebar nav a:after {
-  background-image: -moz-linear-gradient(to right, #0b0b0a, #DD700B);
-  background-image: -webkit-linear-gradient(to right, #0b0b0a, #DD700B);
-  background-image: -ms-linear-gradient(to right, #0b0b0a, #DD700B);
-  background-image: linear-gradient(to right, #0b0b0a, #DD700B);
+  background-image: -moz-linear-gradient(to right, #0b0b0a, #E30079);
+  background-image: -webkit-linear-gradient(to right, #0b0b0a, #E30079);
+  background-image: -ms-linear-gradient(to right, #0b0b0a, #E30079);
+  background-image: linear-gradient(to right, #0b0b0a, #E30079);
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;
@@ -3146,7 +3146,7 @@ body.is-preload #sidebar nav ul li {
   }
   #sidebar nav a:after {
     background-image: none;
-    background-color: #DD700B;
+    background-color: #E30079;
   }
 }
 @media screen and (max-width: 736px) {
