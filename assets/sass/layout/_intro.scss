@@ -8,13 +8,37 @@
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url('images/logo.svg');
+		// background-image: url('images/logo.svg');
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 50% 50%;
 
+		> .inner {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
+			gap: 2em;
+		}
+
+		.intro-image {
+			@include vendor('flex', '0 1 60%');
+			max-width: 48em;
+
+			img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+
+		.intro-content {
+			@include vendor('flex', '1 1 30%');
+			min-width: 0;
+			text-align: left;
+		}
+
 		p {
-			font-size: 1.25em;
+			font-size: 1em;
 
 			@include breakpoint('<=medium') {
 				br {
@@ -29,5 +53,33 @@
 
 		@include breakpoint('<=large') {
 			background-attachment: scroll;
+
+			> .inner {
+				gap: 4em;
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			> .inner {
+				@include vendor('align-items', 'flex-start');
+				@include vendor('flex-direction', 'column');
+				gap: 3em;
+			}
+
+			.intro-image,
+			.intro-content {
+				@include vendor('flex', '0 1 auto');
+				width: 100%;
+			}
+
+			.intro-image {
+				max-width: 36em;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			> .inner {
+				gap: 2.5em;
+			}
 		}
 	}
