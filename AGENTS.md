@@ -120,6 +120,7 @@ Whenever styling needs to change:
 2. Make the change there.
 3. Preserve the current variable/mixin structure.
 4. Tell me if the CSS needs to be rebuilt afterward.
+5. After SCSS changes, make sure to rebuild using "sass assets/sass/main.scss assets/css/main.css" 
 
 Reuse existing:
 
